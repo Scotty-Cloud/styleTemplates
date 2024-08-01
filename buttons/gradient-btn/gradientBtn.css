@@ -1,0 +1,38 @@
+:root {
+  --gradient: linear-gradient(to left top, #88dfab, #569aff) !important;
+}
+
+body {
+  background: #121212 !important;
+  scroll-behavior: smooth;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 5px solid;
+  border-image-slice: 1;
+  background: var(--gradient) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  border-image-source: var(--gradient) !important;
+  text-decoration: none;
+  transition: all 0.4s ease;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+  background: var(--gradient) !important;
+  -webkit-background-clip: none !important;
+  -webkit-text-fill-color: #fff !important;
+  border: 5px solid #fff !important;
+  box-shadow: #222 1px 0 10px;
+  text-decoration: underline;
+}
+
+.button:active {
+  transform: translateY(2px);
+}
