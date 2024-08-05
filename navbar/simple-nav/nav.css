@@ -1,0 +1,25 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex; /* Enable Flexbox */
+  justify-content: space-evenly; /* Distribute space evenly */
+}
+
+a {
+  display: inline-block; /* Makes the link behave like a block element */
+  padding: 10px 15px; /* Adds padding around the link text */
+  font-size: 16px; /* Adjusts the font size */
+  text-decoration: none; /* Removes underline */
+  color: #333; /* Sets the link color */
+}
+
+@media (max-width: 768px) {
+  ul {
+    flex-direction: column;
+  }
+  a {
+    display: block;
+    text-align: center;
+  }
+}
